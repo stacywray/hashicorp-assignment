@@ -2,7 +2,7 @@
 
 To use GitHub, it is important to understand the basic git commands you use to synchronize changes between your local branches, commits, and the remote repository.
 
-## What is the difference between push, fetch, merge, and pull?
+## What is the difference between fetch, merge, push and pull?
 
 The following GitHub commands synchronize changes:
 
@@ -10,12 +10,6 @@ The following GitHub commands synchronize changes:
 - `git fetch` - Download all history from the remote tracking branches.
 - `git merge` - Combine remote tracking branches into current local branch.
 - `git pull` - Update local repository to the newest commit.
-
-### Push
-
-The `git push` command takes your current branch and checks if there is a tracking branch for a remote repository connected to it. If so, push your branch changes to the remote branch. This process is how you share code with a remote repository.
-
-The `push` command fails if all the commits in the remote branch are not in your local branch. When `git push` fails, synchronize your local branch with `git pull` or `git fetch` and `git merge`.
 
 ### Fetch
 
@@ -27,8 +21,14 @@ A `git fetch` does not change your local branch.
 
 To change your local branch, run `git merge origin/main` to merge changes into your `main` branch.
 
+### Push
+
+The `git push` command takes your current branch and checks if there is a tracking branch for a remote repository connected to it. If so, push your branch changes to the remote branch. This process is how you share code with a remote repository.
+
+The `push` command fails if all the commits in the remote branch are not in your local branch. When `git push` fails, synchronize your local branch with `git pull` or `git fetch` and `git merge`.
+
 ### Pull
 
-The `git pull` command runs `git fetch` followed by `git merge`.
+The `git pull` command is a combination of `git fetch` and `git merge`.
 
 You may want to use `git fetch` followed by `git merge` to make sure you understand the changes you're merging into your branch before the merge happens.
