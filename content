@@ -1,8 +1,8 @@
 # GitHub Concepts
 
-To successfully use GitHub, it is important to understand the basic git commands you run to synchronize changes between your local branches, commits, and the remote repository.
+To use GitHub, it is important to understand the basic git commands you run to synchronize changes between your local branches, commits, and the remote repository.
 
-## What is the difference between push, pull, fetch, and merge?
+## What is the difference between push, fetch, merge, and pull?
 
 The following GitHub commands synchronize changes:
 
@@ -13,14 +13,22 @@ The following GitHub commands synchronize changes:
 
 ### Push
 
-Often we describe `git push` and `git pull` as equivalent commands, which isn't true.
-
 The `git push` command takes our current branch and checks if there is a tracking branch for a remote repository connected to it. If so, we push our branch changes to the remote branch. This process is how we share code with a remote repository.
 
 The `push` command fails if all the commits in the remote branch are not in your local branch. When `git push` fails, synchronize your local branch with `git pull` or `git fetch` and `git merge`.
 
-### Pull
-
 ### Fetch
 
-`git fetch` again takes our current branch, and checks to see if there is a tracking branch. If so, it looks for changes in the remote branch, and pulls them into the tracking branch. It does not change your local branch. To do that, you'll need to do `git merge origin/master` (for the "master" branch) to merge those changes into your branch - probably also called "master".`git pull` simply does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
+The `git fetch` command takes the current branch and checks to see if there is a tracking branch. If so, this command looks for changes in the remote branch and pulls those changes into the tracking branch. 
+
+A `git fetch` does not change your local branch.
+
+### Merge
+
+To change your local branch, run `git merge origin/main` to merge changes into your `main` branch.
+
+### Pull
+
+The `git pull` command runs a `git fetch` followed by `git merge`.
+
+You may prefer to use `git fetch` followed by `git merge` to make sure you understand the changes you're merging into your branch before the merge happens.
