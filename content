@@ -6,7 +6,7 @@ The following GitHub commands synchronize changes:
 
 - `git push` - Push changes from a local branch to a remote repository.
 - `git pull` - Update local repository to the newest commit.
-- `git fetch` - get changes from a remote repo into your tracking branch
+- `git fetch` - Downloads all history from the remote tracking branches.
 
 ### Push
 
