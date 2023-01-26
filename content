@@ -1,6 +1,6 @@
 # GitHub Concepts
 
-To use GitHub, it is important to understand the basic git commands you use to synchronize changes between your local branches, commits, and the remote repository.
+To use GitHub, it is important to understand the basic git commands you use to synchronize changes between your local branches and the remote repository.
 
 ## What is the difference between fetch, merge, push and pull?
 
