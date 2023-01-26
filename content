@@ -19,7 +19,9 @@ This command does not change your local branch.
 
 ### Merge
 
-To change your local branch, run `git merge origin/main` to merge changes into your `main` branch.
+The `git merge` command combines remote tracking branches into the current local branch.
+
+Use `git merge origin/main` to merge local branch changes into your `main` branch.
 
 ### Push
 
