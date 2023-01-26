@@ -25,10 +25,10 @@ To change your local branch, run `git merge origin/main` to merge changes into y
 
 The `git push` command takes your current branch and checks if there is a tracking branch for a remote repository connected to it. If so, push your branch changes to the remote branch. This process is how you share code with a remote repository.
 
-The `push` command fails if all the commits in the remote branch are not in your local branch. When `git push` fails, synchronize your local branch with `git pull` or `git fetch` and `git merge`.
+The `push` command fails if all the commits in the remote branch are not in your local branch. If `git push` fails, synchronize your local branch with `git pull` or `git fetch` and `git merge`.
 
 ### Pull
 
 The `git pull` command is a combination of `git fetch` and `git merge`.
 
-You may want to use `git fetch` followed by `git merge` to make sure you understand the changes you're merging into your branch before the merge happens.
+You want to use `git fetch` followed by `git merge` to make sure you understand the changes you're merging into your branch before the merge happens.
