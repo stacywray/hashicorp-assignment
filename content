@@ -7,7 +7,7 @@ To use GitHub, it is important to understand the basic git commands you use to s
 The following GitHub commands synchronize changes:
 
 - `git fetch` - Download all history from the remote tracking branches.
-- `git merge` - Combine remote tracking branches into current local branch.
+- `git merge` - Combine remote tracking branches into the current local branch.
 - `git push` - Push changes from a local branch to a remote repository.
 - `git pull` - Update local repository to the newest commit.
 
