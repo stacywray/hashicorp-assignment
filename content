@@ -15,7 +15,7 @@ The following GitHub commands synchronize changes:
 
 The `git fetch` command takes the current branch and checks to see if there is a tracking branch. If there is a tracking branch, `git fetch` looks for changes in the remote branch and pulls those changes into the tracking branch. 
 
-A `git fetch` does not change your local branch.
+This command does not change your local branch.
 
 ### Merge
 
